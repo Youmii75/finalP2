@@ -1,0 +1,376 @@
+/* body*/
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    margin: 0 auto;
+}
+
+a:link {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+
+/*header*/
+#top {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#top .navigation li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#top nav a {
+    padding: 38px 16px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+#top nav a:hover {
+    border-top: 3px solid var(--color-main);
+    color: var(--color-main);
+}
+
+#top .logo_booki img {
+    width: 140px;
+}
+
+nav {
+    height: 100%;
+    width: 20%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/*formulaire de recherche*/
+#rechercher {
+    height: 48px;
+    border: 1px solid var(--color-background);
+}
+
+button {
+    height: 48px;
+    background-color: var(--color-main);
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid var(--color-background);
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    border: 20px 10px 20px 10px solid var(--color-main-light);
+    padding: 12px 0 40px 0;
+}
+
+.search form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search .icon {
+    display: none;
+}
+
+.search .location {
+    border: 1px solid var(--color-background);
+    background-color: var(--color-background);
+    border-radius: 10px 0px 0px 10px;
+    padding: 15px;
+}
+
+input {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* filtres*/
+.liste_filtre {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 48px;
+}
+
+.filtres {
+    color: var(--color-main);
+    border: 2px solid var(--color-background);
+    border-radius: 40px;
+    padding: 0px;
+    transition: 0.5s ease;
+}
+
+.filtres i {
+    border: 2px solid var(--color-main-light);
+    padding: 16px;
+    border-radius: 40px;
+    background-color: var(--color-main-light);
+}
+
+.filtres strong {
+    color: black;
+    padding: 16px;
+    align-content: center;
+}
+
+.filtres:hover {
+    background-color: var(--color-background);
+}
+
+/* info */
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 0 20px 0px;
+}
+
+.info i {
+    border: 2px solid var(--color-background);
+    color: var(--color-main);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
+.fa-info::before {
+    margin-left: 8px;
+}
+
+/* section cards */
+.block_cards {
+    display: flex;
+    gap: 40px;
+}
+
+.container_cards h2 {
+    padding: 20px 0 8px 0;
+}
+
+.container_cards h3 {
+    padding: 40px 0 20px;
+}
+
+.container_cards {
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 0px 40px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    justify-content: space-around;
+    gap: 32px;
+}
+
+.card {
+    border: 4px solid white;
+    background-color: white;
+    overflow: hidden;
+    /* object-fit: none; */
+    box-sizing: border-box;
+    min-width: 272px;
+    flex: 1;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 32px;
+}
+
+.card_image {
+    position: relative;
+    height: 132px;
+}
+
+.card_image img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.card_body {
+    line-height: 4px;
+    padding: 0 12px 16px;
+}
+
+.card_body i {
+    text-align: left;
+}
+
+.stars {
+    color: var(--color-main);
+}
+
+.stars>.disable {
+    color: var(--color-background);
+    z-index: 100;
+}
+
+/* cards populaires */
+
+#block_populaires {
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    width: 52%;
+    gap: 40px;
+    /* min-width: 412px; */
+    border-radius: 20px;
+    padding: 16px 32px;
+}
+
+.cards_pop {
+    background-color: white;
+    border: 4px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px #999;
+}
+
+.titre_populaires {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titre_populaires i {
+    font-size: 1.5em;
+}
+
+.cardpop {
+    display: flex;
+    gap: 20px;
+}
+
+.cardpop img {
+    width: 36%;
+    height: 152px;
+    position: relative;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.cardpop_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardpop_content i {
+    color: var(--color-main);
+    text-align: left;
+    position: relative;
+}
+
+.cardpop_content .stars {
+    padding-bottom: 8px;
+}
+
+.cardpop_text h4 {
+    margin: 0;
+    padding: 8px 0;
+}
+
+/* aside */
+aside h2 {
+    padding: 20px 32px;
+}
+
+.cards_activites_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 580px;
+    width: 94%;
+    /* height: 52vh; */
+    padding: 20px 0 40px 0;
+    gap: 38px;
+}
+
+.cards_activites_card_container {
+    width: calc(25% - 9px);
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 20px;
+}
+
+.card_container_100 {
+    height: 100%;
+}
+
+.card_container {
+    flex: 1;
+}
+
+.cards_activites {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cards_activites_title {
+    background-color: white;
+    padding: 12px;
+}
+
+.cards_activites_img {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.cards_activites img {
+    position: absolute;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.colone_solo {
+    flex: 1;
+    height: 520px;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 20px 20px 20px 20px;
+}
+
+/* footer */
+#base_footer {
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: flex-start;
+    gap: 272px;
+    padding-left: 52px;
+}

@@ -1,0 +1,15 @@
+:root {    
+    --color-main: #0065fc;
+    --color-main-light: #DEEBFF;
+    --color-background: #F2F2F2;
+
+    --font-main: 'Raleway', sans-serif;
+}
+
+.d_flex {
+  display: flex;
+}
+
+.flex_1 {
+  flex: 1;
+}
